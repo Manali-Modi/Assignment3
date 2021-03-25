@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+
+    <string name="list">Book List</string>
+    <string name="add">Add Book</string>
+
+    <string name="title">World of Book</string>
+
+    <string name="h1">Welcome</string>
+
+    <string name="bname">Book Name</string>
+    <string name="aname">Author Name</string>
+    <string name="genre">Genre</string>
+    <string name="fiction">Fiction</string>
+    <string name="nfiction">Non-fiction</string>
+    <string name="launch">Date of Launch</string>
+    <string name="date">Select Date of Launch</string>
+    <string name="agegrp">Select age group</string>
+    <string name="agegrp1">0-18</string>
+    <string name="agegrp2">19-35</string>
+    <string name="agegrp3">36-58</string>
+    <string name="agegrp4">58 and above</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="type">Book Type</string>
+    <string name="ldate">Date of launch</string>
+    <string name="agegroup">Age group</string>
+    <string name="edit_book_details">Edit Book Details</string>
+    <string name="search">Search book by name</string>
+
+    <string name="bookname">By Book Name</string>
+    <string name="bookdate">By Launch Date</string>
+
+    <string-array name="genre">
+        <item>Novel</item>
+        <item>Mystery</item>
+        <item>Thriller</item>
+        <item>Historical</item>
+        <item>Poetry</item>
+    </string-array>
+
+</resources>

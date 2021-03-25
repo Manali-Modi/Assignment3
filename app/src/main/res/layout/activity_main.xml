@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawlay"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:title="@string/title"
+            app:titleTextColor="@color/white"
+            android:background="@color/design_default_color_primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_below="@id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".BookList">
+
+            <TextView
+                android:id="@+id/txtblist"
+                android:text="@string/list"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_marginVertical="12dp"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+            <ImageButton
+                android:id="@+id/imgsort"
+                android:layout_toRightOf="@id/txtblist"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_sort"
+                android:background="@android:color/transparent"
+                android:layout_marginVertical="12dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <SearchView
+                android:id="@+id/srhbook"
+                android:layout_below="@id/txtblist"
+                android:queryHint="@string/search"
+                android:iconifiedByDefault="false"
+                android:background="@color/cardview_shadow_start_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recbooks"
+                android:layout_below="@id/srhbook"
+                android:layout_marginVertical="12dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navview"
+        app:menu="@menu/book_action"
+        app:headerLayout="@layout/nav_header"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
